@@ -728,7 +728,7 @@
 
 	/* Header */
 
-	
+
 		#header p {
 			font-size: 1em;
 		}
@@ -826,3 +826,10 @@
 		#header nav {
 			padding: 0 1em;
 		} }
+
+
+
+
+body{
+		background-color: #222f3e;
+}
