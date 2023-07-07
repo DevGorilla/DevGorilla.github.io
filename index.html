@@ -1,46 +1,75 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Doug Brown.</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" href="/monster.png" />
+---
+title: "theTidBits"
+bodyclasses: "home"
+eleventyExcludeFromCollections: true
+date: 2020-01-01
+updated: 2020-01-01
+---
+{% extends "layouts/base.njk" %}
+{% block sidebar %}
+{% set navPages = collections.all | eleventyNavigation('home') %}
+        <ul>
+          <li class="currentPageIndicator"><a href="/">home</a></li>
+          {% for entry in navPages %}
+          <li{% if entry.url == page.url %} class="currentPageIndicator"{% endif %}>
+            <a href="{{ entry.url | url }}">{{ entry.title }}</a>{{ entry.tagline }}
+          </li>
+          {% endfor %}
+        </ul>
+{% endblock %}
+{% block content %}
+<!-- <img style="width:100%" src="/images/cropped-tidbits-thor.jpg"> -->
+<h2>
+  Hi! Welcome to my site.
+</h2>
+<p>
+My name is Justus and this is my home on the web. Top-level nagivation is on the left. Recent updates are on the right.
+</p>
+<p>
+My hope is for your exploration of this site to feel like wandering through a well lived-in house&mdash;as you move from room to room you never know quite what you'll find, but there might be something interesting admidst the detritus. I may tidy things up occasionally. For more about why this site exists, see <a href="/why">why</a>, or for the technical details, see <a href="/how">how does this site work</a>. 
+</p>
+<p>
+I do system administration during the day and enjoy playing with web technologies and doing other digital tinkering in my free time&mdash;I have a handful of write-ups and guides about such things in the <a href="/tech">tech</a> section. I try to avoid spending too much time looking at screens by also engaging in hands-on hobbies, including <a href="/food">cooking</a>, <a href="/craft">sewing</a>, and <a href="https://photos.theTidBits">photography</a>.
+</p>
+<p>
+For a broad view of recent major events in my life, see my <a href="/now">/now</a> page.</p>
+<p>
+If you want to ascend to the attic of this rickety old house, check out <a href="/misc">misc</a> where you can find a list of <a href="/misc/books-read/">books I've read recently</a>, a tour of <a href="/misc/plant-tour">my houseplants</a>, a collection of <a href="/misc/housewarming-gifts/">digital housewarming gifts</a>, and possibly other forgotten things.</p>
+</p>
+<p>
+Finally, because links make the web go 'round, check out my <a href="/links">links page</a> for other things I like.
+</p>
+<p>I love hearing from people&mdash;feel free to <a href="mailto:jg@theTidBits">email me</a>!</p>
 
-	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-
-				<!-- Header -->
-					<header id="header">
-						<h1>Doug Brown</h1>
-						<p style="font-size:1.5em">Software Engineer <a href="https://www.dotdashmeredith.com">@ Dotdash Meredith</a></p>
-						<!-- <p style="font-size:1em">Part-Time Petrolhead &nbsp;&bull;&nbsp; Curator of <a href="http://www.liftedsubarus.com/">LiftedSubarus.com</a></p> -->
-						<nav>
-							<ul>
-								<li><a href="https://www.linkedin.com/in/dwesleybrown" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/DevGorilla" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:dwesleybrown@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
-			</div>
-		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
-</html>
+Keeping the web messy,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&ndash;justus</p>
+{% endblock %}
+{% block updates %}
+  <nav id="updates">
+    <h2>Recent Updates</h2>
+    <ul>
+      {% for page in collections.all | sortByUpdated %}
+        {% if loop.index <= 15 %}
+          {% set array = page.url | getParent %}
+          {% set parentUrl = array[0] %}
+          {% set parentSlug = array[1] %}
+          {% if page.data.title %} {# Hide pages that don't have a title #}
+            <li>
+              <span class="publish-date">
+                <!-- Latest Date Shown, published or updated -->
+                {% if page.data.date and not page.data.updated  %}  {{ page.data.date | utcDate('YYYY-MM-DD') }}{% endif %}
+                {% if page.data.date and page.data.updated  %}  {{ page.data.updated | utcDate('YYYY-MM-DD') }}{% endif %}
+                </span>
+                -
+              <!-- <span class="deemph">{{ parentSlug }}/</span> -->
+              <a href="{{ page.url }}">{{ page.data.title }}</a>
+            
+              
+              <!-- <span class="publish-date">(published {{ page.date | utcDate('YYYY-MM-DD') }}{% if page.data.updated %}, updated {{ page.data.updated | utcDate('YYYY-MM-DD') }}{% endif %} )</span> -->
+            </li>
+          {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+{% endblock %}

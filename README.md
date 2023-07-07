@@ -1,3 +1,3 @@
-http://dwesleybrown.com/
+# justusthane.github.io
 
-Single page splash from http://html5up.net
+Source code for www.theTidBits (built with [Eleventy](https://11ty.dev))
