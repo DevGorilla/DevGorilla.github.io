@@ -10,7 +10,7 @@
           <li><a href="/">home</a></li>
           {% for entry in navPages %}
           <li{% if entry.url == page.url %} class="currentPageIndicator"{% endif %}>
-            <a href="{{ entry.url | url }}">{{ entry.title }}</a>{{ entry.tagline }}
+            <a href="{{ entry.url | url }}">{{ entry.title }}</a> <span class="nav-tagline">{{ entry.tagline }}</span>
           </li>
           {% endfor %}
         </ul>
@@ -20,7 +20,7 @@
           <li><a href="/">home</a></li>
             {% for entry in navPages %}
             <li{% if entry.url == page.url %} class="currentPageIndicator"{% endif %}>
-              <a href="{{ entry.url | url }}">{{ entry.title }}</a>{{ entry.tagline }}
+              <a href="{{ entry.url | url }}">{{ entry.title }}</a> <span class="nav-tagline">{{ entry.tagline }}</span>
             </li>
             {% endfor %}
           </ul>

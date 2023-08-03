@@ -12,40 +12,25 @@ updated: 2020-01-01
           <li class="currentPageIndicator"><a href="/">home</a></li>
           {% for entry in navPages %}
           <li{% if entry.url == page.url %} class="currentPageIndicator"{% endif %}>
-            <a href="{{ entry.url | url }}">{{ entry.title }}</a>{{ entry.tagline }}
+            <a href="{{ entry.url | url }}">{{ entry.title }}</a><span class="nav-tagline">{{ entry.tagline }}</span>
           </li>
           {% endfor %}
         </ul>
 {% endblock %}
 {% block content %}
 <!-- <img style="width:100%" src="/images/cropped-tidbits-thor.jpg"> -->
-<h2>
-  Hi! Welcome to my site.
-</h2>
-<p>
-My name is Justus and this is my home on the web. Top-level nagivation is on the left. Recent updates are on the right.
-</p>
-<p>
-My hope is for your exploration of this site to feel like wandering through a well lived-in house&mdash;as you move from room to room you never know quite what you'll find, but there might be something interesting admidst the detritus. I may tidy things up occasionally. For more about why this site exists, see <a href="/why">why</a>, or for the technical details, see <a href="/how">how does this site work</a>. 
-</p>
-<p>
-I do system administration during the day and enjoy playing with web technologies and doing other digital tinkering in my free time&mdash;I have a handful of write-ups and guides about such things in the <a href="/tech">tech</a> section. I try to avoid spending too much time looking at screens by also engaging in hands-on hobbies, including <a href="/food">cooking</a>, <a href="/craft">sewing</a>, and <a href="https://photos.theTidBits">photography</a>.
-</p>
-<p>
-For a broad view of recent major events in my life, see my <a href="/now">/now</a> page.</p>
-<p>
-If you want to ascend to the attic of this rickety old house, check out <a href="/misc">misc</a> where you can find a list of <a href="/misc/books-read/">books I've read recently</a>, a tour of <a href="/misc/plant-tour">my houseplants</a>, a collection of <a href="/misc/housewarming-gifts/">digital housewarming gifts</a>, and possibly other forgotten things.</p>
-</p>
-<p>
-Finally, because links make the web go 'round, check out my <a href="/links">links page</a> for other things I like.
-</p>
-<p>I love hearing from people&mdash;feel free to <a href="mailto:jg@theTidBits">email me</a>!</p>
+<div id="homeContent" >
+  <div class="center" > 
+    <h2>
+      Lorem Ipsum
+     </h2>
 
-Keeping the web messy,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&ndash;justus</p>
+     &nbsp;&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Doug</p>
+  </div>
+</div>
 {% endblock %}
 {% block updates %}
-  <nav id="updates">
+  <nav id="updates" class="center">
     <h2>Recent Updates</h2>
     <ul>
       {% for page in collections.all | sortByUpdated %}
@@ -53,19 +38,22 @@ Keeping the web messy,<br>
           {% set array = page.url | getParent %}
           {% set parentUrl = array[0] %}
           {% set parentSlug = array[1] %}
-          {% if page.data.title %} {# Hide pages that don't have a title #}
+          {% if page.data.title and not page.data.hideUpdate %} {# Hide pages that don't have a title #}
             <li>
               <span class="publish-date">
                 <!-- Latest Date Shown, published or updated -->
                 {% if page.data.date and not page.data.updated  %}  {{ page.data.date | utcDate('YYYY-MM-DD') }}{% endif %}
                 {% if page.data.date and page.data.updated  %}  {{ page.data.updated | utcDate('YYYY-MM-DD') }}{% endif %}
-                </span>
+              </span>
                 -
-              <!-- <span class="deemph">{{ parentSlug }}/</span> -->
+                {% if (parentSlug!=="home") %}
+                  <em class="publish-date">{{parentSlug}}</em>
+                  -
+                {% endif %}
+ 
+          
               <a href="{{ page.url }}">{{ page.data.title }}</a>
-            
-              
-              <!-- <span class="publish-date">(published {{ page.date | utcDate('YYYY-MM-DD') }}{% if page.data.updated %}, updated {{ page.data.updated | utcDate('YYYY-MM-DD') }}{% endif %} )</span> -->
+              <!-- <em>{{parentSlug}}</em> -->
             </li>
           {% endif %}
       {% endif %}

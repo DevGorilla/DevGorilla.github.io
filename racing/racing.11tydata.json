@@ -1,0 +1,6 @@
+{
+    "layout": "layouts/page.njk",
+    "tags": "racing",
+    "cat": "racing",
+    "banner":"./racingBanner.jpg"
+}

@@ -10,9 +10,27 @@
 {% block content %}
 {{ super() }}
 {{ content | safe }}
+{# cropping @ ascpect ratios https://croppola.com/ #}
+{% if banner %}
+<div>
+  <img src={{banner}} class="categoryBanner"> {# via xx.11tydata.json in category folder #}
+</div> 
+{% endif %}
+
 <ul>
+  
 {% for page in collections[cat] | sortByUpdated %}
-  <li>{% blogIcon page.data.type %} <a href="{{ page.url }}">{{ page.data.title }}</a> <span class="publish-date">(published {{ page.date | utcDate('YYYY-MM-DD') }}{% if page.data.updated %}, updated {{ page.data.updated | utcDate('YYYY-MM-DD') }}{% endif %})</span></li>
+  <li>{% blogIcon page.data.type %}
+    <a href="{{ page.url }}">{{ page.data.title }}</a>
+    <span class="publish-date">
+      {% if page.date and not page.data.updated %} 
+        {{ page.date | utcDate('YYYY-MM-DD') }}
+      {%- else -%}
+        {{ page.data.updated | utcDate('YYYY-MM-DD') }}
+      {% endif %}
+    </span>
+
+    </li>
 {% endfor %}
 </ul>
 {% endblock %}

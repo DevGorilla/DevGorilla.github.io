@@ -1,10 +1,10 @@
 {
   "name": "11ty-theTidBits",
   "version": "1.0.0",
-  "description": "Justus' Eleventy site",
+  "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/justusthane/justusthane.github.io.git"
+    "url": "https://github.com/DevGorilla/DevGorilla.github.io.git"
   },
   "main": "index.js",
   "scripts": {

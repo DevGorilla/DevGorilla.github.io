@@ -49,7 +49,19 @@ body.home nav h5 {
 }
 
 .currentPageIndicator {
-  /* text-shadow: 1px 2px 1px white; */
+  text-shadow: 3px 2px 1px var(--dark-mode-link-blue) ;
+}
+
+/* .currentPageIndicator::after {
+  content:  '⬅';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+} */
+
+.nav-tagline{
+  font-size:.7em;
+  font-style:italic;
 }
 
 #titleContainer {
@@ -58,7 +70,14 @@ body.home nav h5 {
   width: 100%;
   display: flex;
   justify-content: center;
+
+  font-family: 'bad_scriptregular', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--accent);
 }
+
+
 
 #avatar {
   grid-area: avatar;
@@ -162,6 +181,14 @@ img {
 a img:hover {
   box-shadow: 5px 5px 0 var(--link-blue);
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 code {
   background-color: #222;
   padding: 5px;
@@ -222,9 +249,12 @@ pre {
 }
 
 #content hr {
-    border: 1px dashed #fff;
+    border: 1px dashed #3d3d3d;
 }
 
+.dashedBorder {
+  border: 1px dashed #3d3d3d;
+}
 .blogPost {
     margin-bottom: 2em;
 }
@@ -313,6 +343,14 @@ pre {
 
 .galleryItem {
   max-width: 280px;
+  margin:5px;
+  margin-top:25px
+}
+
+.galleryItemGrid {
+  max-width: 150px; /* Looks nice on mobile too */
+  margin:5px;
+  margin-top:25px
 }
 
 #back {
@@ -337,7 +375,7 @@ dd {
 }
 
 
-footer p {
+#inspiration p {
 	text-align: center;
 	margin: 0;
 	padding-top: 10px;
@@ -353,8 +391,34 @@ footer p {
 }
 
 blockquote {
-  border: 2px dashed;
-  padding: 0 10px 0 10px;
+  /* background: #f9f9f9; */
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+}
+blockquote noQuote:before {
+  color: #ccc;
+  /* content: open-quote; */
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
 }
 
 .elv-possum-anchor {
@@ -391,6 +455,12 @@ blockquote {
 }
 
 
+@media only screen and (max-width: 1000px) {
+  #sidebar {
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (min-width: 1000px) {
 
   #wrapper {
@@ -405,6 +475,7 @@ blockquote {
     #sidebar {
         border-bottom: none;
         padding-left: 0 !important;
+  
       }
 
     #content {
@@ -415,7 +486,8 @@ blockquote {
     }
 
     nav#updates {
-      max-width: 500px;
+      min-width: 400px;
+      max-width: 600px;
       border-top: none;
       border-left: 4px solid var(--border-color);
     }
@@ -487,7 +559,7 @@ a:hover {
 
     body.color-auto a, body.color-auto a:visited {
         /* color: var(--dark-mode-link-blue); */
-        color: orange
+        color: #ccff00
     }
 
     body.color-auto a:hover {
@@ -515,4 +587,117 @@ a:hover {
     background-color: #171619;
   }
 }
+
+#homeContent{
+  padding:10px
+}
+
+
+
+/* image grid */
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  /* padding: 0 10px; */
+  /* margin-bottom:5px; */
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  /* padding-left: 4px; */
+}
+
+.column img {
+  /* margin-top: 8px; */
+  vertical-align: middle;
+  width: 100%;
+}
+.row img{
+  margin-top: 4px;
+}
+
+/* Adds gap between the image on the left, is removed on image resize */
+.gallerySideBySideRight {
+  padding-left:4px;
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 100%;
+  }
+  .column img{
+    padding-left:2px;
+    width:100%;
+  }
+  .gallerySideBySideRight {
+    padding-left:1px;
+    width:100%;
+  } 
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .gallerySideBySideRight {
+    padding-left:1px;
+    width:100%;
+  } 
+  #updates {
+    min-width:100%;
+    padding:25px;
+  }
+  #sidebar {
+    min-width:100%;
+    margin:-40px;
+  }
+}
+
+
+.caption {
+  font-style: italic;
+  font-size:.8em;
+  color:#808080;
+  margin-top:0px;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+figcaption {
+  font-size:.8em
+}
+
+
+/* TEST */
+    /* This contains the iframe and sets a new stacking context */
+  div .youtubewrapper {
+    margin-top:50px;
+    min-width: 200px;
+    max-width: 1000px;
+    height: 400px;
+    /* background: black;  */
+}
+
+    /* Position the iframe inside the new stacking context
+        to take up the whole space */
+div .youtubewrapper iframe {
+    height: 100%;
+    width: 100%;
+  }
 
