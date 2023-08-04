@@ -12,7 +12,9 @@ eleventyNavigation:
 
 Last night I finished my [Proper Fit Clothing's](https://www.properfitclothing.com/product-page/large-fanny-pack-pattern-download) Large Fanny pack! 
 
-The designer suggests using a serger and a a sewing machine with a foot with adjustable guide for the top stitch. I found my serger for $80 used, after using this method of serging the liner to the outer fabric I don't think I'll go back.
+The designer suggests using a serger and a a sewing machine with a foot with adjustable guide for the top stitch. I found my serger for $80 used, after using this method of serging the liner to the outer fabric I don't think I'll go back. 
+
+I liked this pattern, the only drawback I found was the 1/4 inch seam tolerance. I'd prefer one that is wider. I'm new.
 
 ## Specs
 
