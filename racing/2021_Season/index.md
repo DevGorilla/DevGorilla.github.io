@@ -6,7 +6,7 @@ eleventyNavigation:
   parent: racing
 ---
 
-<img src="RimrockGp2021.jpg"/>  
+<img src="RimrockGp2021_resized.jpg"/>  
 
 <p style="margin-top:30px">
 Rode some races. Had some fun. Made friends. 
@@ -30,12 +30,12 @@ Started shopping for a 2t 300.
 
 <a href="https://nmaoffroad.org/2021-race-results/">2021 NMA Race Results</a>
 
-<img src="rimrock_1058.jpg"/>  
-<img src="rimrock_1059.jpg"/> 
+<img src="rimrock_1058_resized.jpg"/>  
+<img src="rimrock_1059_resized.jpg"/> 
 
 
 <div class="row">
-  <img src="2021_trophy.jpg" style="width:100%;margin:0 auto;"/> 
+  <img src="2021_trophy_resized.jpg" style="width:100%;margin:0 auto;"/> 
 </div>
 
      

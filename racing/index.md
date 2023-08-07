@@ -10,5 +10,5 @@ eleventyNavigation:
   title: racing
   tagline: ' & other things I am bad at'
   order: 100
-customProperty: categoryImg.jpg
+customProperty: categoryImg_resized.jpg
 ---

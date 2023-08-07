@@ -9,7 +9,7 @@ eleventyNavigation:
 
 <div class="row" style="margin-top:30px">
   <div class="column">
-    <img src="xray.jpg"/>  
+    <img src="xray_resized.jpg"/>  
   </div>
   <div class="column gallerySideBySideRight" style="padding-left:15px">
     In a severe misunderstanding of speed and torque I separated my AC joint in December 2021. I tore all 3 ligaments holding my collar bone into my shoulder test riding my friend's new-to-him ktm 300. In the days following the incident I thought I was done riding forever. I couldn't lift my arm and I didn't sleep for a week. It halted my home renovation for months.
@@ -48,24 +48,24 @@ The next 2 races in the season are back-to-back on the same weekend (Frostbite +
 
 <div class="row">
   <div class="column">
-    <img src="GoldenSpike-5444.jpg"/>  
+    <img src="GoldenSpike-5444_resized.jpg"/>  
   </div>
   <div class="column gallerySideBySideRight">
-  <img src="GoldenSpike-5445.jpg"/> 
+  <img src="GoldenSpike-5445_resized.jpg"/> 
   </div>
 </div>
 <div class="row">
-  <img src="GoldenSpike-5446.jpg"/>  
+  <img src="GoldenSpike-5446_resized.jpg"/>  
 </div>
 <div class="row">
-  <img src="GoldenSpike-5447.jpg"/> 
+  <img src="GoldenSpike-5447_resized.jpg"/> 
 </div>
 
 
 
   <p class="caption">10 months after my shoulder injury - god, this hurt. </p>
 <div class="row">
-      <img src="2022_trophy.jpg" style="width:75%;margin:0 auto;"/> 
+      <img src="2022_trophy_resized.jpg" style="width:75%;margin:0 auto;"/> 
 
 </div>
  <p class="caption" style="text-align:center;width:50%;margin:0 auto;"> it's practically a participation trophy, but I'm still proud I got back on the horse </p>

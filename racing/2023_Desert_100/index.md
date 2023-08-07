@@ -10,12 +10,12 @@ eleventyNavigation:
 <div style="margin-top:50px; margin-bottom:25px">
 <div class="row">
   <div class="column">
-    <img src="23d100_4.jpg"/>  
-     <img src="23d100_1.jpg"/>
+    <img src="23d100_4_resized.jpg"/>  
+     <img src="23d100_1_resized.jpg"/>
   </div>
   <div class="column gallerySideBySideRight">
-    <img src="23d100_2.jpg"/>
-     <img src="23d100_3.jpg"/>
+    <img src="23d100_2_resized.jpg"/>
+     <img src="23d100_3_resized.jpg"/>
   </div>
 </div>
  <p class="caption" style="text-align:right">Images from <a href="https://stumpjumpers.smugmug.com">https://stumpjumpers.smugmug.com</a> </p>
@@ -150,15 +150,15 @@ I rode in through the zig zag of the queue, over the stage, hammed it up for the
 
 <div class="row">
   <div class="column">
-    <img src="d100Finish.jpeg"/>  
+    <img src="d100Finish_resized.jpeg"/>  
 
   </div>
   <div class="column gallerySideBySideRight">
-    <img src="d100Finish1.jpg"/>
+    <img src="d100Finish1_resized.jpg"/>
   </div>
 </div>
 <div class="row">
-    <img src="20230403_151648.jpg"/> 
+    <img src="20230403_151648_resized.jpg"/> 
 </div>
 
 

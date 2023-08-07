@@ -8,10 +8,10 @@ eleventyNavigation:
 <h1>Horn Rapids</h1>
 <div class="row">
   <div class="column">
-    <img src="DSC_2287.jpg"/>  
+    <img src="DSC_2287_resized.jpg"/>  
   </div>
   <div class="column gallerySideBySideRight">
-    <img src="DSC_2291.jpg"/>
+    <img src="DSC_2291_resized.jpg"/>
   </div>
 </div>
  <p class="caption">sporting new gear from my <a href="https://leatt.com">Leatt</a> partnership</p>

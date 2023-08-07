@@ -7,7 +7,7 @@ eleventyNavigation:
   parent: projects
 ---
 
-<img src="clamps.jpg"
+<img src="clamps_resized.jpg"
   class="center"
   style="width:75%;"/> 
 <p>
@@ -15,7 +15,7 @@ I bought a large bin of C-clamps from an estate sale for only a few dollars a fe
 </p>
 
 <img
-  src="otgofshelf.jpeg"
+  src="otgofshelf_resized.jpeg"
   alt="shelf of broken parts" 
     class="center"
   style="
@@ -60,9 +60,9 @@ I bought a large bin of C-clamps from an estate sale for only a few dollars a fe
 
 <div class="row">
   <div class="column">
-    <img src="clamps.jpg" class="center"/> 
+    <img src="clamps_resized.jpg" class="center"/> 
     <p class="caption"> Nevermind the oil all over the wall from my last fork service</p>
-    <img src="clamp.jpg" class="center"/>
+    <img src="clamp_resized.jpg" class="center"/>
     <p class="caption">Since these small ones don't have a lot of lip and they are shallow, they need to either be closed or flipped over upside down to avoid falling off</p>
   </div>
 </div>

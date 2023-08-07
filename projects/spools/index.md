@@ -1,6 +1,6 @@
 ---
 title: "[REVIEW] - Air & Power Reels"
-thumbnail: spoolsThumb.jpg
+thumbnail: spoolsThumb_resized.jpg
 date: 2023-06-10
 updated: 2023-06-10
 eleventyNavigation:
@@ -9,7 +9,7 @@ eleventyNavigation:
 ---
 
 <div class="row">
-    <img src="spools1.jpg"/> 
+    <img src="spools1_resized.jpg"/> 
 </div>
 
 <p>
@@ -34,10 +34,10 @@ The caveat with the extension cord setup is that it must be unplugged to spin th
 
 <div class="row">
   <div class="column">
-    <img src="spools2.jpg"/>  
+    <img src="spools2_resized.jpg"/>  
   </div>
   <div class="column" style="padding-left:10px;" >
-    <img src="spool-lock.jpg"/>
+    <img src="spool-lock_resized.jpg"/>
   </div>
 </div>
 
