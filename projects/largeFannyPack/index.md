@@ -161,3 +161,17 @@ I got a bin of hardware for free on craigslist a few years ago from a sewing ins
     <img src="20230802_222153.jpg"/>
   </div>
 </div>
+
+
+I made this for general use, but for the next couple months I plan on using it to carry diapers so I made a changing pad that would fold up and fit inside the rear compartment. 12"x18".
+<div class="row">
+  <div class="column">
+    <img src="20230806_212540_resized.jpg"/>
+  </div>
+  <div class="column gallerySideBySideRight" >
+    <img src="20230806_215131_resized.jpg"/>
+  </div>
+</div>
+<div class="row">
+  <img src="20230806_215440_resized.jpg"/>
+</div>
