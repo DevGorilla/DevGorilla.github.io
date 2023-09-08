@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/webdev/11ty-theTidBits
+cd ~/webdev/11ty-dwesleybrown
 EXISTINGSESSION=$(tmux list-sessions | grep 11ty)
 if ["$EXISTINGSESSION" = ""]
 then
