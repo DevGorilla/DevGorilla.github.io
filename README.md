@@ -1,9 +1,9 @@
 # devgorilla.github.io
 
-Source code for www.theTidBits (built with [Eleventy](https://11ty.dev))
+Source code for dwesleybrown.com (built with [Eleventy](https://11ty.dev))
 
 
 TODO:
-- images for tassajara bread book
-- resize & optimize all images (can a script do this?)
+
 - email
+- CNAME - https://medium.com/@benwiz/how-to-deploy-github-pages-with-aws-route-53-registered-custom-domain-and-force-https-bbea801e5ea3

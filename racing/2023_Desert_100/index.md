@@ -99,7 +99,7 @@ It worked! In 6.5 hrs I had no cramping.
     <h3> TL;DR:</h2>
   </div>
   <div style="text-align:center; font-size:.8em">
-    <p>It SUCKED, but it was way more fun than sitting on the couch.</p>
+    <p>It SUCKED, but it was way more fun than staying home.</p>
   </div>
 </div>
 
@@ -113,7 +113,7 @@ The dirt was great, it had rained Friday night so by Sunday the dirt was still p
 
 The first lap was hard. I crashed in the silt pits 20 miles in. I just had a low-side washout. I knew there was a line of bikes behind me so I tried to tuck my head in towards my knees (kiss my ass goodbye), but this didn't stop the rider behind me running me over. His front wheel hit my head and he crashed a few yards away. 
 
-"ARE YOU OK!?"  - I gave the thumbs up. I was fine, the Leatt 9.5 (carbon) did its job. I've been concussed before, it didn't feel like that and we were all going pretty slow. He was behind <em>me</em> after all. My neck started hurting on lap 2, I don't think it was related and I felt fine the next day.
+"ARE YOU OK!?"  - I gave the thumbs up. I was fine, the <a href="https://leatt.com/us/shop/moto/protection/moto-protection-helmets">Leatt 9.5 (carbon)</a> did its job. I've been concussed before, it didn't feel like that and we were all going pretty slow. He was behind <em>me</em> after all. My neck started hurting on lap 2, I don't think it was related and I felt fine the next day.
 
 I took two breaks 1st lap, my hands hurt and I was out of breath and I was feeling sorry for myself. The mantra for the rest of the race was <em>"don't stop moving"</em> or some such morale boosting nonsense. I knew if I stopped moving I'd be slow to get back at it.
 
@@ -137,9 +137,9 @@ I was forced to stop once for the bathroom. I had held it for 80 miles and it wa
 
 Probably the coolest moment in lap 2 was on the final deep silty hill climb. I came around the corner into the silt with no momentum. There was a blue machine about a 1/3 of the way up hitting the rev limiter. Brapapapapapapp. The bike rising up with the RPM but sinking back down, an exhausted rider next to it. They were throwing their arms up and looking around. I stopped for a moment. Got into 1st and tractored up the hill. I saw we had an audience at the top. Stump Jumper volunteers camped out to watch the carnage. I should have focused more on modulating the clutch instead of looking their way. I killed the bike a few yards above the frustrated rider. "God Dammit". If you ride, you know starting halfway up the hill with no momentum is probably the worst way to take a hill. I hit the E-start. Throttle. Clutch clutch clutch. I got a cheer from the orange clad volunteers when I shot over the top. They knew how relieved I was to not have to fight the hill the way the rider I just roosted for the last minute was having to. Ok, it wasn't that cool but in that moment it was cool to have someone else sharing the small victory.
 
-A few minutes later, on the home stretch it began to snow. Visibility was hard. I had ran out of roll offs. Snow flakes were sticking to the goggles but without them I was getting hit in the  eye with my frosty nemesis. Slowed down, squinted, just kept moving.
+A few minutes later, on the home stretch it began to snow. Visibility was bad. I had ran out of roll offs. Snow flakes were sticking to the goggles but without them I was getting stung in the eyes. Slowed down, squinted, just kept moving.
 
-I rode in through the zig zag of the queue, over the stage, hammed it up for the crowd, and rode off to get my finisher tchotchkes. The only t-shirts left were small or XXL. A few feet away from the table I dropped my bike and had to have a spectator help pick it up. I was sloppy. I'll be back next year in better shape, with a better go pro mount and hopefully I'll be handed a shirt that fits.
+I rode in through the zig zag of the queue, over the stage, hammed it up for the crowd, and rode off to get my finisher tchotchkes. The only t-shirts left were small or XXL. Neither are my size. A few feet away from the table I dropped my bike and had to have a spectator help pick it up. I was sloppy. I'll be back next year in better shape, with a better go pro mount and hopefully I'll be handed a shirt that fits.
 
 
 <a href="https://stumpjumpers.org/sjmc/events-and-races/desert100/">Learn More about Stump Jumpers Desert 100!</a>
