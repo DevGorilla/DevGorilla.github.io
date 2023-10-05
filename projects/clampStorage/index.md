@@ -1,6 +1,6 @@
 ---
 title: Clamp Storage
-thumbnail: clampsThumb.jpg
+thumbnail: clampsThumb_resized.jpg
 date: 2023-07-23
 eleventyNavigation:
   key: clamp_storage

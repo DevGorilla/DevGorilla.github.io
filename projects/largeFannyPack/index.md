@@ -1,7 +1,7 @@
 ---
 title: Large Fanny Pack
 date: 2023-08-03
-thumbnail: large_fanny_thumb.jpg
+thumbnail: large_fanny_thumb_resized.jpg
 eleventyNavigation:
   key: LargeFannyPack
   parent: projects
@@ -38,10 +38,10 @@ Tools:
 
 <div class="row">
   <div class="column">
-    <img src="20230720_204300.jpg"/>
+    <img src="20230720_204300_resized.jpg"/>
   </div>
   <div class="column gallerySideBySideRight">
-    <img src="20230720_204848.jpg"/>  
+    <img src="20230720_204848_resized.jpg"/>  
   </div>
 </div>
 
@@ -54,10 +54,10 @@ Tools:
 
 <div class="row">
   <div class="column">
- <img src="20230720_211034.jpg"/>
+ <img src="20230720_211034_resized.jpg"/>
   </div>
   <div class="column gallerySideBySideRight" >
-<img src="20230724_212510.jpg"/>  
+<img src="20230724_212510_resized.jpg"/>  
   </div>
 </div>
 
@@ -70,35 +70,35 @@ Tools:
 
 <div class="row">
   <div class="column">
-    <img src="20230724_213226.jpg"/>
+    <img src="20230724_213226_resized.jpg"/>
   </div>
   <div class="column gallerySideBySideRight" >
-    <img src="20230724_213655.jpg"/>
+    <img src="20230724_213655_resized.jpg"/>
   </div>
 </div>
 
 <div class="row">
   <div class="column">
     <!-- <img src="20230725_213140.jpg"/> -->
-     <img src="20230725_215424.jpg"/>
+     <img src="20230725_215424_resized.jpg"/>
   </div>
   <div class="column gallerySideBySideRight" >
-    <img src="20230725_215427.jpg"/>
+    <img src="20230725_215427_resized.jpg"/>
   </div>
 </div>
 
 <!-- Landscape -->
 <div class="row">
-  <img src="20230725_220008.jpg"/>
+  <img src="20230725_220008_resized.jpg"/>
 </div>
 
 
 <div class="row">
   <div class="column">
-    <img src="20230728_211344.jpg"/>
+    <img src="20230728_211344_resized.jpg"/>
   </div>
   <div class="column gallerySideBySideRight" >
-    <img src="20230801_223636.jpg"/>
+    <img src="20230801_223636_resized.jpg"/>
   </div>
 </div>
 
@@ -106,7 +106,7 @@ Tools:
 <!-- Landscape -->
 As far as I know, these patterns don't come with written instructions, but each comes with a tutorial video! For me, I'd rather see someone fold and sew than read them describing it.
 <div class="row">
-  <img src="20230802_205054_landscape.jpg"/>
+  <img src="20230802_205054_landscape_resized.jpg"/>
 </div>
 
 I got a bin of hardware for free on craigslist a few years ago from a sewing instructor who was moving across the country! I got a bunch of webbing hardware, webbing, zippers, grommets and a roll of this silver/grey 2" seatbelt material! I like the touch & feel better than the webbing I had on hand.
@@ -122,7 +122,7 @@ I got a bin of hardware for free on craigslist a few years ago from a sewing ins
 
 <div class="row">
   <div class="column">
-    <img src="20230802_210138.jpg"/>
+    <img src="20230802_210138_resized.jpg"/>
   </div>
   <div class="column gallerySideBySideRight" >
      <div style="text-align:center;  padding:25px;" class="dashedBorder">
@@ -142,23 +142,23 @@ I got a bin of hardware for free on craigslist a few years ago from a sewing ins
 <h1> Details </h1>
 
 <div class="row">
-  <img src="20230802_220944.jpg"/>
+  <img src="20230802_220944_resized.jpg"/>
 </div>
 
 <div class="row">
   <div class="column">
-    <img src="20230802_220954.jpg"/>
+    <img src="20230802_220954_resized.jpg"/>
   </div>
   <div class="column gallerySideBySideRight" >
-    <img src="20230802_220958.jpg"/>
+    <img src="20230802_220958_resized.jpg"/>
   </div>
 </div>
 <div class="row">
   <div class="column">
-    <img src="20230802_222902.jpg"/>
+    <img src="20230802_222902_resized.jpg"/>
   </div>
   <div class="column gallerySideBySideRight" >
-    <img src="20230802_222153.jpg"/>
+    <img src="20230802_222153_resized.jpg"/>
   </div>
 </div>
 
