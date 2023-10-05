@@ -1,0 +1,29 @@
+{% extends "layouts/pagewrap.njk" %}
+{# example
+https://github.com/justusthane/justusthane.github.io/blob/master/food/cocktail-recipes/index.md
+#}
+{% block content %}
+  {{ super() }}
+  {{ content | safe }}
+<div class="gallery full-bleed">
+{% for page in collections[cat] | sortByUpdated %}
+  <figure style="text-align: center"
+  {% if collections[cat].length >= 6 %} class="galleryItemGrid" {% endif %}
+  {% if collections[cat].length < 6 %} class="galleryItem" {% endif %}
+  >
+    <a href="{{ page.url }}"><img src="{{ page.url}}/{{ page.data.thumbnail }}"></a>
+  <figcaption><a href="{{ page.url }}">{{ page.data.title }}</a>
+
+  <div class="publish-date" style="text-align: center">
+    {% if page.date and not page.data.updated %} 
+      {{page.data.date | utcDate('YYYY-MM-DD')}}
+    {%- else -%}
+     {{ page.data.updated | utcDate('YYYY-MM-DD') }}
+    {% endif %}
+   </div>
+
+  </figcaption>
+  </figure>
+{% endfor %}
+</div>
+{% endblock %}

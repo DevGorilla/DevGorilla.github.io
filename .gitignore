@@ -1,0 +1,5 @@
+/node_modules/
+/_site/
+/_cache/
+/.env
+/misc/self-composting-page/

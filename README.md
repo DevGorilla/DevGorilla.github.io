@@ -1,3 +1,12 @@
-http://dwesleybrown.com/
+# devgorilla.github.io
 
-Single page splash from http://html5up.net
+Source code for dwesleybrown.com (built with [Eleventy](https://11ty.dev))
+
+resize images
+- `npm run optimize-images`
+
+TODO:
+
+- email
+- CNAME - https://medium.com/@benwiz/how-to-deploy-github-pages-with-aws-route-53-registered-custom-domain-and-force-https-bbea801e5ea3
+- I have little to say as welcome, reorg the front page to have updates after content. widen content

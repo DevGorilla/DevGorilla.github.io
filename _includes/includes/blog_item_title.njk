@@ -1,0 +1,7 @@
+{% if currentPage.data.type == 'reply' %}
+  <i class="fas fa-reply"></i> Reply to: <a class="u-in-reply-to"  href="{{ currentPage.data.link }}">{{ currentPage.data.title }}</a>
+{% elif currentPage.data.type == 'link' %}
+  <i class="fas fa-link"></i> Link: <a href="{{ currentPage.data.link }}">{{ currentPage.data.title }}</a>
+{% else %}
+  {{ currentPage.data.title }}
+{% endif %}

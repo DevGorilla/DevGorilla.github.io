@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- template forked from https://github.com/justusthane/justusthane.github.io -->
+<html style="scroll-behavior: smooth;" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>{% if title != 'dwesleybrown' %}{{ title }} | {% endif %}dwesleybrown</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Home, home on the web, where the links and the hypertexts play">
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    {# <link rel="shortcut icon"  href="favicon.ico" /> #}
+    <link rel="canonical" href="https://dwesleybrown.com{{ page.url }}" />
+    <link rel="stylesheet" href="/style/style.css" type="text/css">
+    <link rel="stylesheet" href="/style/prism-cb.css" type="text/css">
+    <link rel="stylesheet" href="/webfonts/badscript.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="/style/fontawesome-all.min.css" type="text/css">
+    {# <link rel="webmention" href="https://webmention.io/theTidBits/webmention" /> #}
+
+</head>
+<body id="top" class="color-auto {{ bodyclasses }}">
+  {# <div id="toggle-color">
+  </div> #}
+  <div id="wrapper">
+  
+    {# <div id="titleContainer">
+      <div id="avatar">
+        <a href="/"><img alt="Avatar" src="/images/profile.jpg" class="avatar"></a>
+      </div>
+      <div id="sitetitle">
+        <!-- <div class="logo"><a href="/" class="u-url u-uid p-name" rel="me">foo </br>bar</a></div>  -->
+      </div>
+    </div> #}
+
+    {# <div id="titleContainer">
+      <h1>theTidbits</h1>
+        <div id="elsewhere">
+          <a href="mailto:" rel="me" class="u-email" data-label="<strong>email</strong>&nbsp;| email" aria-label="Email"><i class="far fa-envelope-open" aria-hidden="true"></i></a>
+          <a href="https://github.com/DevGorilla" rel="me" data-label="<strong>code</strong>&nbsp;| github" aria-label="Github"><i class="fab fa-github" aria-hidden="true"></i></a>
+        </div>
+    </div> #}
+
+    <div id="sidebar">
+      {% block sidebar %}
+      {% endblock %}
+        <div id="tagline">
+        <div id="elsewhere">
+          {# TODO: MAILTO #}
+          <a href="mailto:dwesleybrown@gmail.com" rel="me" class="u-email" data-label="<strong>email</strong>&nbsp;| email" aria-label="Email"><i class="far fa-envelope-open" aria-hidden="true"></i></a>
+          <a href="https://github.com/DevGorilla" rel="me" data-label="<strong>code</strong>&nbsp;| github" aria-label="Github"><i class="fab fa-github" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    </div>
+    </header>
+
+    <main id="content">
+      {% block content %}
+      {% endblock %}
+      
+    </main>
+    {% block updates %} {% endblock %}
+  </div>
+
+{# 
+  <footer id="footer">
+    <p>
+      <a href="https://github.com/justusthane/justusthane.github.io" style="color:#3d3d3d">
+        Inspired by https://github.com/justusthane/justusthane.github.io
+      </a>
+    </p>
+  </footer> #}
+
+  <script src="/js/jquery-3.5.1.min.js"></script>
+  <script src="/js/scripts.js"></script>
+
+</body>
+</html>

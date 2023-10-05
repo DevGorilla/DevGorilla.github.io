@@ -1,46 +1,70 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Doug Brown.</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" href="/monster.png" />
+---
+title: "dwesleybrown.com"
+bodyclasses: "home"
+eleventyExcludeFromCollections: true
+date: 2020-01-01
+updated: 2020-01-01
+---
+{% extends "layouts/base.njk" %}
+{% block sidebar %}
+{% set navPages = collections.all | eleventyNavigation('home') %}
+        <ul>
+          <li class="currentPageIndicator"><a href="/">home</a></li>
+          {% for entry in navPages %}
+          <li{% if entry.url == page.url %} class="currentPageIndicator"{% endif %}>
+            <a href="{{ entry.url | url }}">{{ entry.title }}</a><span class="nav-tagline">{{ entry.tagline }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+{% endblock %}
 
-	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+{% block content %}
+<!-- <div id="homeContent" >
+  <div class="center" > 
+    <h2>
+      Hi!
+     </h2>
+     <p>Welcome to my small corner of the web. Remember personal websites?
+      If you do, good on you for the mental elasticity. For the rest of you google it.
+      It was a thing before social media in the 00s.
+      I wanted a discoverable place to keep longer form write ups on things I'm doing and building that I can control.
+    
+    </p>
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Doug Brown</h1>
-						<p style="font-size:1.5em">Software Engineer <a href="https://www.dotdashmeredith.com">@ Dotdash Meredith</a></p>
-						<!-- <p style="font-size:1em">Part-Time Petrolhead &nbsp;&bull;&nbsp; Curator of <a href="http://www.liftedsubarus.com/">LiftedSubarus.com</a></p> -->
-						<nav>
-							<ul>
-								<li><a href="https://www.linkedin.com/in/dwesleybrown" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/DevGorilla" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:dwesleybrown@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
-			</div>
-		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
-</html>
+     &nbsp;&nbsp;&nbsp;&nbsp;&ndash;&nbsp;Doug</p>
+  </div>
+</div> -->
+
+{% endblock %}
+{% block updates %}
+  <nav id="updates" class="center" style="padding-top:20px;">
+    <h2>Recent Updates</h2>
+    <ul>
+      {% for page in collections.all | sortByUpdated %}
+        {% if loop.index <= 15 %}
+          {% set array = page.url | getParent %}
+          {% set parentUrl = array[0] %}
+          {% set parentSlug = array[1] %}
+          {% if page.data.title and not page.data.hideUpdate %} {# Hide pages that don't have a title #}
+            <li>
+              <span class="publish-date">
+                <!-- Latest Date Shown, published or updated -->
+                {% if page.data.date and not page.data.updated  %}  {{ page.data.date | utcDate('YYYY-MM-DD') }}{% endif %}
+                {% if page.data.date and page.data.updated  %}  {{ page.data.updated | utcDate('YYYY-MM-DD') }}{% endif %}
+              </span>
+                -
+                {% if (parentSlug!=="home") %}
+                  <em class="publish-date">{{parentSlug}}</em>
+                  -
+                {% endif %}
+ 
+          
+              <a href="{{ page.url }}">{{ page.data.title }}</a>
+              <!-- <em>{{parentSlug}}</em> -->
+            </li>
+          {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+{% endblock %}
