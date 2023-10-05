@@ -7,7 +7,7 @@ eleventyNavigation:
   parent: projects
 ---
 <div style="width:75%;">
-  <img style="margin:0 auto;" src="large_fanny_thumb.jpg"/>
+  <img style="margin:0 auto;" src="large_fanny_thumb_resized.jpg"/>
 </div>
 
 Last night I finished my [Proper Fit Clothing's](https://www.properfitclothing.com/product-page/large-fanny-pack-pattern-download) Large Fanny pack! 
