@@ -21,4 +21,4 @@ pages
 https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay/
 
 
-setting --> pages --> "Deploy from a branch" --> gh-pages
+setting --> pages --> "Deploy from a branch" --> gh-pages <s>github actions</s> 
