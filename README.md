@@ -2,6 +2,8 @@
 
 Source code for dwesleybrown.com (built with [Eleventy](https://11ty.dev))
 
+resize images
+- `npm run optimize-images`
 
 TODO:
 
