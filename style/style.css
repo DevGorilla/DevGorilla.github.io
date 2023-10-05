@@ -23,8 +23,8 @@ body {
     grid-template-rows: 120px min-content 1fr;
     gap: 10px;
     grid-template-areas:
-      "sitetitle sitetitle"
-      "tagline   tagline"
+      "sitetitle sitetitle",
+       "tagline   tagline"
       "sidebar   sidebar"
       "content   content"
       "updates   updates";
@@ -111,6 +111,7 @@ body.home nav h5 {
 }
 
 #sidebar {
+   padding-top:20px;
   grid-area: sidebar;
   font-size: 1.4rem;
   /* border-top: 5px dashed var(--border-color);
@@ -143,6 +144,7 @@ body.home nav h5 {
     border-top: 5px solid var(--border-color);
     grid-area: updates;
     font-size: 0.9rem;
+    padding-top:30px;
 }
 
 #updates li {
@@ -277,7 +279,7 @@ pre {
 }
 
 .publish-date {
-    font-size: .7em;
+    font-size: 1em;
     /* text-shadow: 1px 1px 2px #ff1493; */
 }
 
@@ -466,8 +468,8 @@ blockquote p {
   #wrapper {
     grid-template-columns: 330px 1fr;
     grid-template-areas:
-      "sitetitle content  updates"
-      "tagline   content  updates"
+      "sidebar content  updates"
+      "sidebar   content  updates"
       "sidebar   content  updates";
     }
 
@@ -486,7 +488,8 @@ blockquote p {
     }
 
     nav#updates {
-      min-width: 400px;
+      min-width: 1500px;
+      min-height: 1000px;
       max-width: 600px;
       border-top: none;
       border-left: 4px solid var(--border-color);
@@ -663,7 +666,7 @@ a:hover {
   }
   #sidebar {
     min-width:100%;
-    margin:-40px;
+    /* margin:-40px; */
   }
 }
 
