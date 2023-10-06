@@ -9,6 +9,7 @@ eleventyNavigation:
   tagline: ' & bookmarks'
   order: 70
 ---
+ <i>a non-monetized pinterest of sorts</i>
 
  <h3>Table of Contents</h3>
 
@@ -63,8 +64,8 @@ A nomadic Rhode Islander, my grandfather built several boats over his lifetime. 
 - [Vintage Plans from Popular Mechanics](https://www.vintageprojects.com/search/node?keys=boat)
 - [Uncle John's Flat Bottom Boat Plans](www.unclejohns.com) <em>Bayou Boats</em>
 - [Utility Punt](https://www.storerboatplans.com/boatplans/handy-punt-lightweight-stable-outboard-boat-for-fishing-rvs-and-caravanning/) <em>probably handles like a brick</em>
-- [Devlin's Boatbuilding: How to Build Any Boat the Stitch-and-Glue Way](https://www.thriftbooks.com/w/devlins-boatbuilding-how-to-build-any-boat-the-stitch-and-glue-way_samual-devlin/316340/?resultid=6adade2e-7327-41e1-8482-4a009d417c3e#edition=3707367&idiq=3874342) <em>Stitch & glue technique only, no plans</em>
-- [Instant Boat building with Dynamite Paysonsd](https://www.thriftbooks.com/w/instant-boatbuilding-with-dynamite-payson_harold-h-payson/535618/item/#edition=3305028&idiq=13314324) <em>Plans only</em>
+- [Devlin's Boatbuilding: How to Build Any Boat the Stitch-and-Glue Way](https://www.thriftbooks.com/w/devlins-boatbuilding-how-to-build-any-boat-the-stitch-and-glue-way_samual-devlin/316340/?resultid=6adade2e-7327-41e1-8482-4a009d417c3e#edition=3707367&idiq=3874342) <em>Stitch & glue technique only, no plan. I read it and it was great</em>
+- [Instant Boat building with Dynamite Paysonsd](https://www.thriftbooks.com/w/instant-boatbuilding-with-dynamite-payson_harold-h-payson/535618/item/#edition=3305028&idiq=13314324) <em>Plans only, very light with technique</em>
 - [Garvey 16 plans - Boat Builder Central](https://www.boatbuildercentral.com/product/jon-boat-garvey-16-boat-plans-gf16/)
 - [Outboard Dory 16 plans- Boat Builder Central ](https://www.boatbuildercentral.com/product/outboard-dory-16-boat-plans-od16/)
 - [Lumber Yard Skiff](http://www.oldwharf.com/store/lys-plans) <em>Skiff built from lumber yard materials</em>

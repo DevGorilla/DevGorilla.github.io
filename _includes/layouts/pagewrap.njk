@@ -4,17 +4,19 @@
 {% set parentSlug = array[1] %}
 {% block sidebar %}
 {% set navPages = collections.all | eleventyNavigation('home') %}
-<details id="menuMobile">
-  <summary>Menu</summary>
+<div id="menuMobile" class="center" style="width:150px">
+  {# TODO: change this into HamBurger #}
+
+    {# <summary class="fa fa-bars "></summary> #}
         <ul>
           <li><a href="/">home</a></li>
           {% for entry in navPages %}
           <li{% if entry.url == page.url %} class="currentPageIndicator"{% endif %}>
-            <a href="{{ entry.url | url }}">{{ entry.title }}</a> <span class="nav-tagline">{{ entry.tagline }}</span>
+            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
           </li>
           {% endfor %}
         </ul>
-</details>
+</div>
         <div id="menuDesktop">
           <ul>
           <li><a href="/">home</a></li>
@@ -28,7 +30,10 @@
 {% endblock %}
 {% block content %}
 {{ breadcrumbs | dump | safe }}
-<a href="{{ parentUrl }}"><i class="fas fa-arrow-circle-left"></i>&nbsp;{{ parentSlug }}</a>
+<span class="mobile-hide">
+  <a href="{{ parentUrl }}"><i class="fas fa-arrow-circle-left"></i>&nbsp;{{ parentSlug }}</a>
+</span>
+
   <h1>
 {% if type == 'reply' %}
   <i class="fas fa-reply"></i> Reply to: <a class="u-in-reply-to"  href="{{ link }}">{{ title }}</a>
