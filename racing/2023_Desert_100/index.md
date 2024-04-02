@@ -81,7 +81,7 @@ This helped me a lot, but I wish I had pushed harder. Specifically, I wish I had
 ## Supplements
 For 2 seasons I dealt with cramping mid-race. I would hydrate like a fish beforehand with water and sport drinks but still have my legs cramp up in only a 90 minute race. This was until I found out about  <a href="https://www.precisionhydration.com/sweat-testing/our-sweat-tests">salty sweaters</a>. Everyone loses sodium and other electrolytes at different rates, some much faster. An electrolyte deficit is mostly the cause for cramping, so I tried some more concentrated electrolyte supplements during the races in the 6 weeks before the Desert 100. I saw a dramatic improvement.
 
-I drank a gallon a day the two days prior to the race. A 20ox bottle of liquid IV that morning. I had hydration bladders prepared with Liquid IV and Ryno Carb Supplements. One for lap 1 and another for lap 2. I took Ryno pills (additional electrolyte, 383mg sodium + others) in line for the race and another set in the pits. I avoided supplements with caffeine. I had a 5hr energy that morning, but I wanted control of how much caffeine I'd have since it dehydrates.
+I drank a gallon a day the two days prior to the race. A 20oz bottle of liquid IV that morning. I had hydration bladders prepared with Liquid IV and Ryno Carb Supplements. One for lap 1 and another for lap 2. I took Ryno pills (additional electrolyte, 383mg sodium + others) in line for the race and another set in the pits. I avoided supplements with caffeine. I had a 5hr energy that morning, but I wanted control of how much caffeine I'd have since it dehydrates.
 
 It worked! In 6.5 hrs I had no cramping.
 

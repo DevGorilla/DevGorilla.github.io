@@ -5,7 +5,7 @@
   --accent: orange;
   --link-blue: #024def;
   --dark-mode-link-blue: #02c4ef;
-  /*--background-color: #faf7f7;*/
+  /* --background-color: #faf7f7; */
   --background-color: #fff;
   --border-color: #ececec;
 }
@@ -127,7 +127,8 @@ body.home nav h5 {
     font-size: 1.1rem;
     line-height: 1.6;
     font-family: 'Inter', sans-serif;
-    font-feature-settings: "ss02", "cv02", "frac";
+    /* This would give numbers as superscript */
+    /* font-feature-settings: "ss02", "cv02", "frac"; */
 }
 
 #content li {
