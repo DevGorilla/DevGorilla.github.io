@@ -39,8 +39,13 @@
   <i class="fas fa-reply"></i> Reply to: <a class="u-in-reply-to"  href="{{ link }}">{{ title }}</a>
 {% elif type == 'link' %}
   <i class="fas fa-link"></i> Link: <a href="{{ link }}">{{ title }}</a>
+
+{% elif categoryParent  %}
+      <h1 style="text-align:center">
+    {{ title }}
+  </h1>
 {% else %}
-  {{ title }}
+   {{ title }}
 {% endif %}
   </h1>
 {% endblock %}

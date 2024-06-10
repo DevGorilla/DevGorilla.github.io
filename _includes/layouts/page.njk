@@ -4,7 +4,7 @@
 {{ super() }}
 <p class="publish-date">Published {{ page.date | utcDate('YYYY-MM-DD') }}{% if updated %}, updated {{ updated | utcDate('YYYY-MM-DD')}}{% endif %}</p>
 {{ content | safe }}
-<div style="margin-top:20px;">
+<div style="padding-top:20px;">
     <a href="#wrapper" ><i class="fas fa-arrow-circle-up"></i>&nbsp;top</a>
 </div>
 {% endblock %}

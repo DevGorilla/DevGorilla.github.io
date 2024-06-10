@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "NODE_ENV=production eleventy --serve",
     "build": "NODE_ENV=production eleventy",
-    "optimize-images": "node scripts/resizeImages.js"
+    "optimize-images": "node scripts/resizeImages.js projects"
   },
   "keywords": [],
   "author": "",

@@ -13,24 +13,28 @@
 {# cropping @ ascpect ratios https://croppola.com/ #}
 {% if banner %}
 <div>
-  <img src={{banner}} class="categoryBanner"> {# via xx.11tydata.json in category folder #}
+  <img src={{banner}} class="categoryBanner center" style="margin-top:40px;"> {# via xx.11tydata.json in category folder #}
 </div> 
 {% endif %}
 
-<ul>
-  
-{% for page in collections[cat] | sortByUpdated %}
-  <li>{% blogIcon page.data.type %}
-    <a href="{{ page.url }}">{{ page.data.title }}</a>
-    <span class="publish-date">
-      {% if page.date and not page.data.updated %} 
-        {{ page.date | utcDate('YYYY-MM-DD') }}
-      {%- else -%}
-        {{ page.data.updated | utcDate('YYYY-MM-DD') }}
-      {% endif %}
-    </span>
 
-    </li>
+
+<ul class="center" style="text-align:center; list-style: none; margin-top:40px;">
+
+{% for page in collections[cat] | sortByUpdated %}
+  {% if not page.data.categoryParent %}
+    <li>{% blogIcon page.data.type %}
+      <a href="{{ page.url }}">{{ page.data.title }}</a>
+      <span class="publish-date">
+        {% if page.date and not page.data.updated %} 
+          {{ page.date | utcDate('YYYY-MM-DD') }}
+        {%- else -%}
+          {{ page.data.updated | utcDate('YYYY-MM-DD') }}
+        {% endif %}
+      </span>
+      </li>
+  {% endif %}
 {% endfor %}
 </ul>
+
 {% endblock %}

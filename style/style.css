@@ -121,10 +121,11 @@ body.home nav h5 {
 }
 
 #content {
+  padding:10%;
   grid-area: content;
     /*Stop child <pre> elements from overflowing */
     overflow: auto;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     line-height: 1.6;
     font-family: 'Inter', sans-serif;
     /* This would give numbers as superscript */
@@ -138,7 +139,7 @@ body.home nav h5 {
 #updates {
     /* border-top: 5px dashed var(--border-color); */
     grid-area: updates;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
 }
 
 #updates li {
@@ -212,6 +213,9 @@ pre {
 
 #content img {
     max-width: 100%;
+}
+#content video {
+  max-width: 100%;
 }
 
 .highlight-line-active {
@@ -442,7 +446,8 @@ blockquote p {
       padding-left: 20px;
       padding-right: 20px;
       /* border-left: 4px dashed var(--border-color); */
-      max-width: 850px;
+
+      /* max-width: 850px; */
     }
 
     /* nav#updates {

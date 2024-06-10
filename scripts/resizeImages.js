@@ -6,7 +6,7 @@ const { readFile, writeFile, unlink } = require('fs').promises;
 
 const ResizeWidth = 1024;
 
-const dirForProcessing = [
+const defaultDirForProcessing = [
     'projects',
     'racing',
     'UNUSED',
@@ -19,6 +19,7 @@ const dirForProcessing = [
 const imageTypes = [
     'jpg',
     'jpeg',
+    'webp'
     // 'gif'
 ]
 const resizedSuffix= '_resized'
@@ -93,6 +94,12 @@ async function getImages(src) {
 
 async function main(){
     // 1. Get Images to Process
+    dirForProcessing = defaultDirForProcessing;
+
+    if(process.argv[2]){
+      dirForProcessing = [ process.argv[2] ];
+    }
+
     const images = [];
     for (let i = 0; i < dirForProcessing.length; i++) {
         const imgs = await getImages(dirForProcessing[i]);
@@ -100,7 +107,7 @@ async function main(){
     }
 
     console.log(`${images.length} images to resize`)
-    
+
     // 2. Synchronously resizes, saves new image and deletes old.
     for (let i = 0; i < images.length; i++) {
         const imgBuffer = await readFile(images[i]);
