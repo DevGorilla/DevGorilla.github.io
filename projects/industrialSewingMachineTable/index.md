@@ -33,7 +33,7 @@ eleventyNavigation:
 
 
  <img class="center" src="20240528_180436_resized.jpg" alt="crusty industrial sewing machine table in back of truck"/>
-  <p>My luck held and later that week I found an industrial table with a warped top for $60 a few miles away. I found a sheet of 3/4 particle board in the back of my garage from a from a freight shipment I had received last year. Cabinet grade ply would have likely been <em>better</em>, but I was trying to build on the cheap. I laminated 2 layers of the particle board with a half bottle of titebond.</p>
+  <p>My luck held and later that week I found an industrial table with a warped top for $60 a few miles away. I found a sheet of 3/4 particle board in the back of my garage from a freight shipment I had received last year. Cabinet grade ply would have likely been <em>better</em>, but I was trying to build on the cheap. I laminated 2 layers of the particle board with a half bottle of titebond.</p>
 
 
   <p>I generally used my current table for determining the position of the slot for the machine. The new frame is not as nice as my current table but the dimensions were the same, 48x20.</p>
